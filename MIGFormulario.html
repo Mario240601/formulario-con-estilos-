@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MIGFormulario</title>
+		<style type="text/css">
+			td{
+				
+				background: #8EFFE8;
+			}
+
+			th{
+				color:red;
+				
+				border: red;
+			}
+
+			label{
+				color: red;
+
+			}
+			.boton{
+				color: blue;
+			}
+
+			.submit{
+				color: green;
+			}
+
+			
+			
+
+		</style>
+	</head>
+	<body >
+		<form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+			<table border="1">
+													  <tr ><th colspan="2">User Form</th></tr>
+	      
+				 <tr><td><label for="nombre">Enter Name</label></td><td><input type="text" name="nombre" id="nombre"></td></tr>
+				 <tr><td><label for="contra">Enter Password</label></td><td><input type="password" name="nombre" id="contra"></td></tr>
+				 <tr><td><label for="direc">Enter Address</label></td><td><input type="textarea" name="nombre" id="direc"></td></tr>
+				 <tr>
+					 <td>Select Game</td>
+					 <td>
+						 <input type="checkbox" name="deportes[]" id="Hockey+" value="Hockey"><label for="Hockey">Hockey</label><br>
+						 <input type="checkbox" name="deportes[]" id="Futbol" value="Futbol"><label for="Futbol">Futbol</label><br>
+						 <input type="checkbox" name="deportes[]" id="Baloncesto" value="Baloncesto"><label for="Baloncesto">Baloncesto</label><br>
+						 <input type="checkbox" name="deportes[]" id="Rugby" value="Rugby" > <label for="Rugby">Rugby</label><br>
+						 <input type="checkbox" name="deportes[]" id="Tenis" value="Tenis" ><label for="Tenis">Tenis</label><br>
+						 <input type="checkbox" name="deportes[]" id="Boxeo" value="Boxeo"><label for="Boxeo">Boxeo</label><br></td></tr>
+
+				 <tr><td>Gender</td>
+				 <td><input type="radio" name="sexo" id="mujer"><label for="mujer">Mujer</label>
+				 <input type="radio" name="sexo" id="hombre"><label for="hombre">Hombre</label></td></tr>
+
+				 <tr>
+				 	<td><label for="edad">select ur age</label></td>
+				 	<td>
+				 		<select name="edad" id="edad">
+					 		<option value="select" name="edad" selected="select">Select</option>
+					 		<option value="<18" name="edad"><18</option>
+					 		<option value="+18"name="edad">+18</option>
+				 		</select>
+				 	</td>
+				 </tr>
+
+				 <tr><td colspan="2"><input type="file" name="examinar" ></td></tr>
+
+				  <tr>
+				  	<td colspan="2"><input type="button" value="Click Me" class="boton">
+				  					  <input type="reset" class="boton">
+				  					  <input type="submit" class="submit">
+				  		  
+				  	  </td>
+				  </tr>			
+			
+		</form>
+
+	</body>
+</html>
+
+
+
